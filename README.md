@@ -16,6 +16,9 @@ Milestone Project 2 - with Code Institute
 ### Features Left to Implement
 
 ## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
 
 ## Testing
 **31 Jan:** Created the structure of the website. No relevant issues found during this process, I couldn't remember many things, but after a review of the first Milestone, w3school, Code Institute's online lessons, everything became very natural to use, and I felt much more confident than in the first Milestone. Created a simple header, a nav bar, a simple footer.
