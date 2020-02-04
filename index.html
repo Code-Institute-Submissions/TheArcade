@@ -19,7 +19,7 @@
     <!--   ********** HEADER START ********** -->
 
     <header class="header">
-        THE ARCADE
+        <a href="index.html">THE ARCADE</a>
     </header>
 
     <!--   ********** HEADER END ********** -->
@@ -48,12 +48,17 @@
 
 
         <div id="myLinks">
+
             <a href="index.html">Home</a>
+            <hr>
             <a href="game1.html">Twin Cards</a>
+            <hr>
             <a href="game2.html">Tris</a>
+            <hr>
             <a href="game3.html">Something</a>
+            <hr>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
             <span class="burger">
                 <hr>
                 <hr>
@@ -63,7 +68,7 @@
 
 
     <script>
-        function myFunction() {
+        function burgerMenu() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "block") {
                 x.style.display = "none";
@@ -87,7 +92,10 @@
 
 
     <footer class="footer">
-        © 2020 The Arcade Games Project - Code Institute Milestone
+        <p class="bigFooter">© 2020 The Arcade Games Project - Code Institute Milestone 2</p>
+
+        <p class="smallFooter">© 2020 The Arcade Games Project</p>
+        <p class="smallFooter">Code Institute Milestone 2</p>
     </footer>
 
 

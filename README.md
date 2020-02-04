@@ -25,6 +25,8 @@ Milestone Project 2 - with Code Institute
 
 **01 Feb:** CSS issue. Nav bar showed 40px padding left that prevented the menu to be exacly in the center. Added padding: 0; to nav ul, in the CSS file, added justify-content: space-evenly; and removed margin: auto; the menu is exactly where I wanted now.
 
+**04 Feb:** Fixed responsive design for both the header and the footer. The headers looks to be too big when the screen goes over the 576px. I will need to reduce the header size, but I need to create the game first, so that I can choose the correct size for the header, and have a good balance between the header and the body. I also fixed the burger menu, looks nicer now and more balanced with the screen size.
+
 ## Deployment
 
 
