@@ -229,13 +229,18 @@ nav li a {
 #myLinks {
     display: none;
     position: absolute;
-    right: 0;
+
     top: 0;
-    padding: 20px 20px;
-    width: 140px;
-    margin: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
     background-color: #2e3e50;
     border: 3px solid #f4c318;
+    text-align: center;
 }
 
 #myLinks a:link {
@@ -245,6 +250,11 @@ nav li a {
     font-size: 18px;
     display: block;
 }
+
+
+#myLinks a:visited {
+    color: white;
+  }
 
 
 
