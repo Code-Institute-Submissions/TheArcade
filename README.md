@@ -27,6 +27,9 @@ Milestone Project 2 - with Code Institute
 
 **04 Feb:** Fixed responsive design for both the header and the footer. The headers looks to be too big when the screen goes over the 576px. I will need to reduce the header size, but I need to create the game first, so that I can choose the correct size for the header, and have a good balance between the header and the body. I also fixed the burger menu, looks nicer now and more balanced with the screen size.
 
+**04 Feb:** I created a structure for the memory games with 24 picture. I could see that actually 24 picture are too many, and take too much space in the webpage not offering a really nice UX, and would be hard to follow. After many test, I reduced to 20, but still the same result. I'm now happy with 16 pictures.
+
+
 ## Deployment
 
 

@@ -16,6 +16,8 @@
 <body>
 
 
+
+
     <!--   ********** HEADER START ********** -->
 
     <header class="header">
@@ -30,13 +32,13 @@
     <!--   ********** 3 BUTTONS MENU ********** -->
 
 
-        <nav>
-            <ul>
-                <li><a href="twincards.html">Game 1</a></li>
-                <li><a href="tris.html">Game 2</a></li>
-                <li><a href="none.html">Game 3</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="twincards.html">Game 1</a></li>
+            <li><a href="tris.html">Game 2</a></li>
+            <li><a href="none.html">Game 3</a></li>
+        </ul>
+    </nav>
 
 
     <!--   ********** 3 BUTTONS END ********** -->
@@ -47,24 +49,24 @@
     <!-- BURGER MENU START -->
 
 
-        <div id="myLinks">
+    <div id="myLinks">
 
-            <a href="index.html">Home</a>
+        <a href="index.html">Home</a>
+        <hr>
+        <a href="game1.html">Twin Cards</a>
+        <hr>
+        <a href="game2.html">Tris</a>
+        <hr>
+        <a href="game3.html">Something</a>
+        <hr>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+        <span class="burger">
             <hr>
-            <a href="game1.html">Twin Cards</a>
             <hr>
-            <a href="game2.html">Tris</a>
             <hr>
-            <a href="game3.html">Something</a>
-            <hr>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
-            <span class="burger">
-                <hr>
-                <hr>
-                <hr>
-            </span>
-        </a>
+        </span>
+    </a>
 
 
     <script>
@@ -73,7 +75,7 @@
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {
-            x.style.display = "block";
+                x.style.display = "block";
             }
         }
     </script>
@@ -86,6 +88,31 @@
     <main class="main">
         <section>
             Let's Play
+            <p id="demo"></p>
+            <div class="table">
+                <img id="one" class="pic" src="" />
+                <img id="two" class="pic" src="" />
+                <img id="three" class="pic" src="" />
+                <img id="four" class="pic" src="" />
+            </div>
+            <div class="table">
+                <img id="five" class="pic" src="" />
+                <img id="six" class="pic" src="" />
+                <img id="seven" class="pic" src="" />
+                <img id="eight" class="pic" src="" />
+            </div>
+            <div class="table">
+                <img id="nine" class="pic" src="" />
+                <img id="ten" class="pic" src="" />
+                <img id="uno" class="pic" src="" />
+                <img id="due" class="pic" src="" />
+            </div>
+            <div class="table">
+                <img id="tre" class="pic" src="" />
+                <img id="quattro" class="pic" src="" />
+                <img id="cinque" class="pic" src="" />
+                <img id="sei" class="pic" src="" />
+            </div>
         </section>
     </main>
 
@@ -93,14 +120,13 @@
 
     <footer class="footer">
         <p class="bigFooter">© 2020 The Arcade Games Project - Code Institute Milestone 2</p>
-
         <p class="smallFooter">© 2020 The Arcade Games Project</p>
         <p class="smallFooter">Code Institute Milestone 2</p>
     </footer>
 
 
 
-    <script src="../JS/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

@@ -7,7 +7,7 @@ body {
 
 
 .main {
-    padding-top: 180px;
+    padding-top: 100px;
     padding-bottom: 180px;
     background-color: #ffffff;
     color: #15162e;
@@ -15,7 +15,18 @@ body {
     text-align: center;
 }
 
+.table {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
 
+.pic {
+    border-radius: 50%;
+    width: 130px;
+    border: 2px solid #f4c318;
+    margin: 50px;
+}
 
 
 
