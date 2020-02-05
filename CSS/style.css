@@ -7,7 +7,7 @@ body {
 
 
 .main {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 180px;
     background-color: #ffffff;
     color: #15162e;
@@ -23,9 +23,19 @@ body {
 
 .pic {
     border-radius: 50%;
-    width: 130px;
+    width: 155px;
+    height: 142px;
+    margin: 48px;
+}
+
+
+.pics {
+    border-radius: 50%;
+    width: 154px;
+    height: 154px;
+    margin: 40px;
+    margin-right: 54px;
     border: 2px solid #f4c318;
-    margin: 50px;
 }
 
 

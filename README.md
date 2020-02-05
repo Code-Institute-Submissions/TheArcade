@@ -29,6 +29,7 @@ Milestone Project 2 - with Code Institute
 
 **04 Feb:** I created a structure for the memory games with 24 picture. I could see that actually 24 picture are too many, and take too much space in the webpage not offering a really nice UX, and would be hard to follow. After many test, I reduced to 20, but still the same result. I'm now happy with 16 pictures.
 
+**05 Feb:** I could find an image to have the characters of game of thrones hidden, I'm using the House Stark Crest. I could cover all the 16 cards using a for loop. I found quite difficult to switch from the crest to the character without losing the original size of the table, this because they are two random images taken from the internet and with different size. I had to use different styles and make many tests in order to have it fixed. A work of good design creating the images from scratch surely would have avoided this issue.
 
 ## Deployment
 
@@ -41,7 +42,8 @@ Milestone Project 2 - with Code Institute
 ### Media
 - Info about how to create a proper README.md was obtained from https://github.com/Code-Institute-Solutions/readme-template
 - Basic writing and formatting syntax for the file README.md: https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#paragraphs
-- I found inspiration for the logo used in this site on https://www.logomaker.com/
+- I found inspiration for the logo used on this website: https://www.logomaker.com/
 - The photos used in this site were obtained from https://www.hbo.com/game-of-thrones/cast-and-crew
+- House Stark crest was obtained here: https://www.vippng.com/png/detail/242-2422088_game-of-thrones-house-stark-sigil-game-of.png
 
 ### Acknowledgements
