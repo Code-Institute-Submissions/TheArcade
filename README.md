@@ -31,6 +31,10 @@ Milestone Project 2 - with Code Institute
 
 **05 Feb:** I could find an image to have the characters of game of thrones hidden, I'm using the House Stark Crest. I could cover all the 16 cards using a for loop. I found quite difficult to switch from the crest to the character without losing the original size of the table, this because they are two random images taken from the internet and with different size. I had to use different styles and make many tests in order to have it fixed. A work of good design creating the images from scratch surely would have avoided this issue.
 
+**05 Feb:** Memory game shows a few bugs. If I click more times on the same card, it behaves as if it was a match. Besides, I can click and uncover more than two cards in a row if I click fast. These bugs need to be fixed.
+
+
+
 ## Deployment
 
 
