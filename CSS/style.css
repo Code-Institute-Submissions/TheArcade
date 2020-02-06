@@ -5,9 +5,8 @@ body {
     font-family: 'Arvo', Ubuntu, sans-serif;
 }
 
-
 .main {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 180px;
     background-color: #ffffff;
     color: #15162e;
@@ -23,59 +22,16 @@ body {
 
 .pic {
     border-radius: 50%;
-    width: 155px;
-    height: 142px;
-    margin: 48px;
+    width: 145px;
+    height: 145px;
+    margin: 28px;  /* 48px */
 }
 
 
 .pics {
     border-radius: 50%;
-    width: 154px;
-    height: 154px;
-    margin: 40px;
-    margin-right: 54px;
+    width: 145px; /* 154px */
+    height: 145px; /* 154px */
+    margin: 26px; 
     border: 2px solid #f4c318;
-}
-
-
-
-@media (max-width: 576px) {
-    .footer {
-        margin: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background-color: #2e3e50;
-        border: 3px solid #f4c318;
-        color: #ffffff;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .footer .bigFooter {
-        display: none;
-    }
-}
-
-@media (min-width: 576px) {
-    .footer {
-        margin: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background-color: #2e3e50;
-        border: 3px solid #f4c318;
-        color: #ffffff;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .footer .smallFooter {
-        display: none;
-    }
 }

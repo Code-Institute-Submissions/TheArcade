@@ -5,60 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/header_footer.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
 
-    <title>The Arcade</title>
+    <title>Memory</title>
 </head>
 
 <body>
 
 
-
-
-    <!--   ********** HEADER START ********** -->
+    <!-- HEADER START -->
 
     <header class="header">
-        <a href="index.html">THE ARCADE</a>
+        <p>MEMORY</p>
     </header>
 
-    <!--   ********** HEADER END ********** -->
+    <!-- HEADER END -->
 
 
 
 
-    <!--   ********** 3 BUTTONS MENU ********** -->
-
+    <!-- 3 BUTTONS MENU START -->
 
     <nav>
         <ul>
-            <li><a href="twincards.html">Game 1</a></li>
-            <li><a href="tris.html">Game 2</a></li>
-            <li><a href="none.html">Game 3</a></li>
+            <li><a href="twincards.html">New Game</a></li>
+            <li><a href="tris.html">Solution</a></li>
+            <li><a href="none.html">How To</a></li>
         </ul>
     </nav>
 
-
-    <!--   ********** 3 BUTTONS END ********** -->
+    <!-- 3 BUTTONS MENU END -->
 
 
 
 
     <!-- BURGER MENU START -->
 
-
     <div id="myLinks">
 
-        <a href="index.html">Home</a>
+        <a href="game1.html">New Game</a>
         <hr>
-        <a href="game1.html">Twin Cards</a>
+        <a href="game2.html">Solution</a>
         <hr>
-        <a href="game2.html">Tris</a>
-        <hr>
-        <a href="game3.html">Something</a>
-        <hr>
+        <a href="game3.html">How To</a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
         <span class="burger">
@@ -82,13 +74,13 @@
 
     <!-- BURGER MENU END -->
 
+<!--
 
-
+    <!-- GAME START -->
 
     <main class="main">
         <section>
-            Let's Play
-            <p id="demo"></p>
+            <!-- <p id="demo"></p> REMEMBER TO DELETE THIS -->
             <div class="table">
                 <img id="one" class="pic" onclick="guess(this.id)" />
                 <img id="two" class="pic" onclick="guess(this.id)" />
@@ -116,14 +108,19 @@
         </section>
     </main>
 
+    <!-- GAME END -->
 
+
+
+    <!-- FOOTER START -->
 
     <footer class="footer">
-        <p class="bigFooter">© 2020 The Arcade Games Project - Code Institute Milestone 2</p>
-        <p class="smallFooter">© 2020 The Arcade Games Project</p>
+        <p class="bigFooter">© 2020 Memory Game Project - Code Institute Milestone 2</p>
+        <p class="smallFooter">© 2020 Memory Game Project</p>
         <p class="smallFooter">Code Institute Milestone 2</p>
     </footer>
 
+    <!-- FOOTER END -->
 
 
     <script src="js/script.js"></script>

@@ -1,0 +1,176 @@
+/****************** MOBILE FIRST APPROACH ******************/
+
+/*** Note: Breakpoint 992px not necessary ***/
+
+
+
+/****** SCREEN MAX 576px ******/
+
+    .header {
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #2e3e50;
+        border: 3px solid #f4c318;
+        color: #ffffff;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        margin: 10px;
+    }
+    
+    .burger hr {
+        border: 1.3px solid #ffffff;
+    }
+    
+    #myLinks {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        background-color: #2e3e50;
+        border: 3px solid #f4c318;
+        text-align: center;
+    }
+    
+    #myLinks a:link {
+        margin: 28px;
+        color: white;
+        text-decoration: none;
+        font-size: 26px;
+        display: block;
+    }
+    
+    
+    #myLinks a:visited {
+        color: white;
+      }
+    
+    
+    #myLinks hr {
+        border: 1px solid #ffffff;
+        width: 30px;
+    }
+
+    .footer {
+        margin: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #2e3e50;
+        border: 3px solid #f4c318;
+        color: #ffffff;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer .bigFooter {
+        display: none;
+    }
+
+
+
+
+/****** SCREEN MIN 576px ******/
+
+@media (min-width: 576px) {
+    .footer .bigFooter {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+        
+    .footer .smallFooter {
+        display: none;
+    }
+
+}
+
+
+
+
+/****** SCREEN MIN 768px ******/
+
+@media (min-width: 768px) {
+    nav ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #ffffff;
+    }
+
+    nav li {
+        background-color: #2e3e50;
+        border: 3px solid #f4c318;
+        padding: 8px;
+        width: 100px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    nav li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .burger {
+        display: none;
+    }
+}
+
+
+
+
+
+/****** SCREEN MIN 1200px ******/
+
+@media (min-width: 1200px) {
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 40px;
+    }
+    
+    nav ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #ffffff;
+    }
+
+    nav li {
+        background-color: #2e3e50;
+        border: 3px solid #f4c318;
+        padding: 10px;
+        width: 100px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    nav li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}

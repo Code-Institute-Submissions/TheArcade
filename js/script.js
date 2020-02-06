@@ -31,8 +31,8 @@ var arr = [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7];
 arr.sort(function (a, b) { return 0.5 - Math.random() });
 
 
-// String with the solution for testing purposes
-document.getElementById("demo").innerHTML = arr;
+// String with the solution for testing purposes *************************** REMEMBER TO DELETE THIS    <---------
+// document.getElementById("demo").innerHTML = arr;
 
 
 // Let's hide all the cards with the House Stark Crest

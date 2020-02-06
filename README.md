@@ -37,6 +37,9 @@ Milestone Project 2 - with Code Institute
 
 **06 Feb:** I could find that my initial idea to create three games for the project is not possible considering the deadline. I will complete only the current game I'm currently working on. The name the Arcade must be changed to the game name "Memory". I will add more features to this game if I have enough time, to make it nicer.
 
+**06 Feb:** The difference in terms of pixels between the House Stark Crest and the characters pictures was causing too many problems, the character pictuare was squared, but the crest was not. I used lightroom to make the crest squared, now it's much easier to have a balanced and better organised game table.
+
+
 ## Deployment
 
 
