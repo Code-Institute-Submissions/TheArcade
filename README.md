@@ -33,7 +33,9 @@ Milestone Project 2 - with Code Institute
 
 **05 Feb:** Memory game shows a few bugs. If I click more times on the same card, it behaves as if it was a match. Besides, I can click and uncover more than two cards in a row if I click fast. These bugs need to be fixed.
 
+**06 Feb:** Fixed the code. Now it's not possible to click on the same card twice, and it's not possible to click on three cards in a row.
 
+**06 Feb:** I could find that my initial idea to create three games for the project is not possible considering the deadline. I will complete only the current game I'm currently working on. The name the Arcade must be changed to the game name "Memory". I will add more features to this game if I have enough time, to make it nicer.
 
 ## Deployment
 
