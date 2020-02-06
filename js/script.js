@@ -1,5 +1,16 @@
-/* CREATING ARRAY WITH THE PICTURES */
+/****************************
 
+ MEMORY GAME
+ MILESTONE 2
+ FULL STACK WEB DEVELOPER COURSE
+ AT CODE INSTITUTE
+
+*****************************/
+
+
+
+
+// Creating an array with the pictures path
 var GOT = [
     'Images/Arya.jpg',
     'Images/Tyrion.jpg',
@@ -12,28 +23,19 @@ var GOT = [
 ];
 
 
-
-
-/* CREATING ARRAY FOR THE TWINS */
-
+// Creating an array that contains all the cards plus the double
 var arr = [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7];
 
 
-
-/* LET'S MIX THE ORDER TO START THE GAME */
+// Let's mix the order of the cards to start the game
 arr.sort(function (a, b) { return 0.5 - Math.random() });
 
 
-
-
-/* CREATING MY PERSONAL STRING WITH THE SOLUTION FOR TESTING THE GAME */
+// String with the solution for testing purposes
 document.getElementById("demo").innerHTML = arr;
 
 
-
-
-/* HIDING ALL THE CARDS WITH THE HOUSE STARK CREST */
-
+// Let's hide all the cards with the House Stark Crest
 var a;
 
 for (a = 0; a < arr.length; a++) {
@@ -43,33 +45,30 @@ for (a = 0; a < arr.length; a++) {
 
 
 
-/* USING SWITCH AND CASE TO GET THE CORRISPONDENT PICTURE */
 
+// Let's create new variables and new arrays for the code
 var match = 0;  // Counter in order to have only two cards a time
 var ct = 0; // Counter to know when we have completed the game
 var check = []; // Array to gather the values of the two pics and compare them
-var idGet = []; // Save the id of the img to remove them from the table once they match
+var idGet = []; // Save the ID of the img for comparison 
+var clicks = 0; // We can click only on two cards in a row
 
-
-
-/*  
-
-Control function:
-
-- Verify that the same getID value is not used two times in a row
-- make sure that you don't click three items in a row, only two items in a row can be clicked
-
-*/ 
 
 function guess(getID) {
 
-    console.log(getID);  // ID del tag img
+    clicks++;
 
-    idGet[match] = getID; // Salviamo l'ID del tag img
+    // Let's verify if we clicked on three cards in a row    
+    if(clicks > 2) return false;
 
-    if(match == 1 && idGet[0] == idGet[1]) return; // KEEP FIXING HERE
+    // Let's save the img ID value so that we can compare afterwards 
+    idGet[match] = getID;
+
+    // Let's verify if we click on the same picture two times
+    if(match == 1 && idGet[0] == getID) { clicks = 1; return false; }
 
 
+    // Function two compare the two cards
     function compare(current) {
 
         if (match == 1) {
@@ -77,6 +76,7 @@ function guess(getID) {
                 setTimeout(function () {
                     document.getElementById(getID).style.visibility = "hidden";
                     document.getElementById(idGet[0]).style.visibility = "hidden";
+                    clicks = 0;
                 }, 1300);
                 console.log(getID);
                 console.log(idGet[0]);
@@ -90,6 +90,7 @@ function guess(getID) {
                     document.getElementById(idGet[0]).src = "Images/stark.jpeg";
                     document.getElementById(getID).className = "pic";
                     document.getElementById(idGet[0]).className = "pic";
+                    clicks = 0;
                 }, 1300);
             }
 
@@ -100,8 +101,8 @@ function guess(getID) {
     }
 
 
-
-    console.log(match);
+    // We show the correct character based on our click, we also call the function compare to compare two cards.
+    // In case we have one card, we only increase the variable values
 
     switch (getID) {
         case 'one':
@@ -184,7 +185,4 @@ function guess(getID) {
             document.getElementById('sei').className = "pics";
             compare(arr[15]);
     }
-
-    console.log(match);
-
 }
