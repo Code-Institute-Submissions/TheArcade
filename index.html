@@ -31,9 +31,9 @@
 
     <nav>
         <ul>
-            <li><a href="twincards.html">New Game</a></li>
-            <li><a href="tris.html">Solution</a></li>
-            <li><a href="none.html">How To</a></li>
+            <li><a href="javascript:void(0);" onclick="reload()">New Game</a></li>
+            <li><a href="javascript:void(0);" onclick="solution()">Solution</a></li>
+            <li><a href="javascript:void(0);">How To</a></li>
         </ul>
     </nav>
 
@@ -74,13 +74,12 @@
 
     <!-- BURGER MENU END -->
 
-<!--
+
 
     <!-- GAME START -->
 
     <main class="main">
         <section>
-            <!-- <p id="demo"></p> REMEMBER TO DELETE THIS -->
             <div class="table">
                 <img id="one" class="pic" onclick="guess(this.id)" />
                 <img id="two" class="pic" onclick="guess(this.id)" />

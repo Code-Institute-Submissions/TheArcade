@@ -43,16 +43,12 @@ for (a = 0; a < arr.length; a++) {
 }
 
 
-
-
-
 // Let's create new variables and new arrays for the code
 var match = 0;  // Counter in order to have only two cards a time
 var ct = 0; // Counter to know when we have completed the game
 var check = []; // Array to gather the values of the two pics and compare them
 var idGet = []; // Save the ID of the img for comparison 
 var clicks = 0; // We can click only on two cards in a row
-
 
 function guess(getID) {
 
@@ -70,7 +66,6 @@ function guess(getID) {
 
     // Function two compare the two cards
     function compare(current) {
-
         if (match == 1) {
             if (check[0] == current) {
                 setTimeout(function () {
@@ -78,8 +73,6 @@ function guess(getID) {
                     document.getElementById(idGet[0]).style.visibility = "hidden";
                     clicks = 0;
                 }, 1300);
-                console.log(getID);
-                console.log(idGet[0]);
                 match = 0;
                 ct++;
             } else {
@@ -101,7 +94,7 @@ function guess(getID) {
     }
 
 
-    // We show the correct character based on our click, we also call the function compare to compare two cards.
+    // We show the correct character based on our click, we also call the function compare() to compare two cards.
     // In case we have one card, we only increase the variable values
 
     switch (getID) {
@@ -185,4 +178,31 @@ function guess(getID) {
             document.getElementById('sei').className = "pics";
             compare(arr[15]);
     }
+}
+
+
+// Providing a solution of the current game.
+function solution() {
+    if (document.getElementById('one').style.visibility != "hidden") document.getElementById('one').src = GOT[arr[0]];
+    if (document.getElementById('two').style.visibility != "hidden") document.getElementById('two').src = GOT[arr[1]];
+    if (document.getElementById('three').style.visibility != "hidden") document.getElementById('three').src = GOT[arr[2]];
+    if (document.getElementById('four').style.visibility != "hidden") document.getElementById('four').src = GOT[arr[3]];
+    if (document.getElementById('five').style.visibility != "hidden") document.getElementById('five').src = GOT[arr[4]];
+    if (document.getElementById('six').style.visibility != "hidden") document.getElementById('six').src = GOT[arr[5]];
+    if (document.getElementById('seven').style.visibility != "hidden") document.getElementById('seven').src = GOT[arr[6]];
+    if (document.getElementById('eight').style.visibility != "hidden") document.getElementById('eight').src = GOT[arr[7]];
+    if (document.getElementById('nine').style.visibility != "hidden") document.getElementById('nine').src = GOT[arr[8]];
+    if (document.getElementById('ten').style.visibility != "hidden") document.getElementById('ten').src = GOT[arr[9]];
+    if (document.getElementById('uno').style.visibility != "hidden") document.getElementById('uno').src = GOT[arr[0]];
+    if (document.getElementById('due').style.visibility != "hidden") document.getElementById('due').src = GOT[arr[11]];
+    if (document.getElementById('tre').style.visibility != "hidden") document.getElementById('tre').src = GOT[arr[12]];
+    if (document.getElementById('quattro').style.visibility != "hidden") document.getElementById('quattro').src = GOT[arr[13]];
+    if (document.getElementById('cinque').style.visibility != "hidden") document.getElementById('cinque').src = GOT[arr[14]];
+    if (document.getElementById('sei').style.visibility != "hidden") document.getElementById('sei').src = GOT[arr[15]];
+}
+
+
+// New Game
+function reload() {
+    location.reload();
 }
