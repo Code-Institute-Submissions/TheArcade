@@ -33,7 +33,7 @@
         <ul>
             <li><a href="javascript:void(0);" onclick="reload()">New Game</a></li>
             <li><a href="javascript:void(0);" onclick="solution()">Solution</a></li>
-            <li><a href="javascript:void(0);">How To</a></li>
+            <li><a href="javascript:void(0);" onclick="howto()">How To</a></li>
         </ul>
     </nav>
 
@@ -46,11 +46,11 @@
 
     <div id="myLinks">
 
-        <a href="game1.html">New Game</a>
+        <a href="javascript:void(0);" onclick="reload()">New Game</a>
         <hr>
-        <a href="game2.html">Solution</a>
+        <a href="javascript:void(0);" onclick="solution()">Solution</a>
         <hr>
-        <a href="game3.html">How To</a>
+        <a href="javascript:void(0);" onclick="howto()">How To</a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
         <span class="burger">
@@ -79,7 +79,7 @@
     <!-- GAME START -->
 
     <main class="main">
-        <section>
+        <section id="center">
             <div class="table">
                 <img id="one" class="pic" onclick="guess(this.id)" />
                 <img id="two" class="pic" onclick="guess(this.id)" />
@@ -105,8 +105,33 @@
                 <img id="sei" class="pic" onclick="guess(this.id)" />
             </div>
         </section>
+
+        <section id="instructions">
+            <h1>Memory: How to play</h1>
+            <p>Memory has long been a favourite game for all generations. It is easy to play, in fact it is so simple that really young children can play with ease. It requires observation, concentration and a good memory to win. This is a single player game. The game is also known as Concentration, Pelmanism, Shinkei-suijaku, Pexeso and Pairs.</p>
+            <h2>Object of the Game</h2>
+            <p>The object of the game is to collect all the matching pairs to win.</p>
+            <h2>Playing Memory</h2>
+            <p>Choose a card by clicking on it to turn it over, then select another card to turn that over too. If the two cards are a matching pair, for example two Jon Snow, then they will be removed from the game table. The player is awarded another turn for making a match and goes again. If the cards are not a match they are turned back over, and you can keep choosing another card to guess a pair. The game continues in this fashion until all the cards are played. If the player would like to see the solution, it’s possible to click on the button ‘Solution’ to turn all the cards over. It’s also possible to start a new game by clicking on ‘New Game’.</p>
+            <h2>Winning the Game</h2>
+            <p>The player wins once all the cards have been played.</p>
+        </section>
     </main>
 
+    <script>
+        function howto() {
+            var merlino = document.getElementById("center");
+            var how = document.getElementById("instructions");
+
+            if (merlino.style.display === "block") {
+                merlino.style.display = "none";
+                how.style.display = "block";
+            } else {
+                merlino.style.display = "block";
+                how.style.display = "none";
+            }
+        }
+    </script>
     <!-- GAME END -->
 
 

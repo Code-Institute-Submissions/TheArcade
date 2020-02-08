@@ -47,6 +47,7 @@ Milestone Project 2 - with Code Institute
 ### Content
 - Arvo Font was obtained from: https://fonts.googleapis.com/css?family=Arvo&display=swap
 - Ubuntu Font was obtained from: https://fonts.googleapis.com/css?family=Ubuntu&display=swap
+- Instructions in the section How to were obtained at: https://www.classicgamesandpuzzles.com/Memory.html
 
 ### Media
 - Info about how to create a proper README.md was obtained from https://github.com/Code-Institute-Solutions/readme-template

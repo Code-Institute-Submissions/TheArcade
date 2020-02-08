@@ -6,8 +6,8 @@ body {
 }
 
 .main {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     background-color: #ffffff;
     color: #15162e;
 }
@@ -35,7 +35,28 @@ body {
     border: 2px solid #f4c318;
 }
 
+#center {
+    display: block;
+}
 
+#instructions {
+    display: none;
+    margin: auto;
+    width: 75%;
+}
+
+#instructions p {
+    padding-bottom: 25px;
+    font-size: 12px;
+}
+
+#instructions h1 {
+    font-size: 22px;
+}
+
+#instructions h2 {
+    font-size: 18px;
+}
 
 
 
@@ -65,6 +86,18 @@ body {
         height: 75px; /* 154px */
         margin: 20px; 
     }
+
+    #instructions p {
+        font-size: 14px;
+    }
+
+    #instructions h1 {
+        font-size: 24px;
+    }
+    
+    #instructions h2 {
+        font-size: 20px;
+    }
 }
 
 
@@ -90,6 +123,22 @@ body {
         width: 90px; /* 154px */
         height: 90px; /* 154px */
         margin: 26px; 
+    }
+
+    #instructions {
+        width: 60%;
+    }
+
+    #instructions p {
+        font-size: 16px;
+    }
+    
+    #instructions h1 {
+        font-size: 24px;
+    }
+    
+    #instructions h2 {
+        font-size: 20px;
     }
 }
 
