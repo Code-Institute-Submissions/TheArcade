@@ -15,150 +15,159 @@
 
 <body>
 
-
-    <!-- HEADER START -->
-
-    <header class="header">
-        <p>MEMORY</p>
-    </header>
-
-    <!-- HEADER END -->
-
-
-
-
-    <!-- 3 BUTTONS MENU START -->
-
-    <nav>
-        <ul>
-            <li><a href="javascript:void(0);" onclick="reload()">New Game</a></li>
-            <li><a href="javascript:void(0);" onclick="solution()">Solution</a></li>
-            <li><a href="javascript:void(0);" onclick="howto()">How To</a></li>
-        </ul>
-    </nav>
-
-    <!-- 3 BUTTONS MENU END -->
-
-
-
-
-    <!-- BURGER MENU START -->
-
-    <div id="myLinks">
-
-        <a href="javascript:void(0);" onclick="reload()">New Game</a>
-        <hr>
-        <a href="javascript:void(0);" onclick="solution()">Solution</a>
-        <hr>
-        <a href="javascript:void(0);" onclick="howto()">How To</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
-        <span class="burger">
-            <hr>
-            <hr>
-            <hr>
-        </span>
-    </a>
-
-
-    <script>
-        function burgerMenu() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
-
-    <!-- BURGER MENU END -->
-
-
-
-    <!-- GAME START -->
-
     <main class="main">
-        <section id="center">
-            <div class='score'>
-                <p>1UP</p>
-                <p id='cScore'>0000000</p>
-            </div>
-            <div class="table">
-                <img id="one" class="pic" onclick="guess(this.id)" />
-                <img id="two" class="pic" onclick="guess(this.id)" />
-                <img id="three" class="pic" onclick="guess(this.id)" />
-                <img id="four" class="pic" onclick="guess(this.id)" />
-            </div>
-            <div class="table">
-                <img id="five" class="pic" onclick="guess(this.id)" />
-                <img id="six" class="pic" onclick="guess(this.id)" />
-                <img id="seven" class="pic" onclick="guess(this.id)" />
-                <img id="eight" class="pic" onclick="guess(this.id)" />
-            </div>
-            <div class="table">
-                <img id="nine" class="pic" onclick="guess(this.id)" />
-                <img id="ten" class="pic" onclick="guess(this.id)" />
-                <img id="uno" class="pic" onclick="guess(this.id)" />
-                <img id="due" class="pic" onclick="guess(this.id)" />
-            </div>
-            <div class="table">
-                <img id="tre" class="pic" onclick="guess(this.id)" />
-                <img id="quattro" class="pic" onclick="guess(this.id)" />
-                <img id="cinque" class="pic" onclick="guess(this.id)" />
-                <img id="sei" class="pic" onclick="guess(this.id)" />
-            </div>
-        </section>
+        <!-- HEADER START -->
 
-        <section id="instructions">
-            <h1>Memory: How to play</h1>
-            <p>Memory has long been a favourite game for all generations. It is easy to play, in fact it is so simple that really young children can play with ease. It requires observation, concentration and a good memory to win. This is a single player game. The game is also known as Concentration, Pelmanism, Shinkei-suijaku, Pexeso and Pairs.</p>
-            <h2>Object of the Game</h2>
-            <p>The object of the game is to collect all the matching pairs to win.</p>
-            <h2>Playing Memory</h2>
-            <p>Choose a card by clicking on it to turn it over, then select another card to turn that over too. If the two cards are a matching pair, for example two Jon Snow, then they will be removed from the game table. The player is awarded another turn for making a match and goes again. If the cards are not a match they are turned back over, and you can keep choosing another card to guess a pair. The game continues in this fashion until all the cards are played. If the player would like to see the solution, it’s possible to click on the button ‘Solution’ to turn all the cards over. It’s also possible to start a new game by clicking on ‘New Game’.</p>
-            <h2>Winning the Game</h2>
-            <p>The player wins once all the cards have been played.</p>
-        </section>
+        <header class="header">
+            <p>MEMORY</p>
+        </header>
 
-        <section id="welldone">
-             <p id='wellfont'>Well done!</p>
-             <p id='finalScore'></p>
-             <img src="Images/welldone.png" />
-        </section>
-    </main>
+        <!-- HEADER END -->
 
-    <script>
-        function howto() {
-            var merlino = document.getElementById("center");
-            var how = document.getElementById("instructions");
 
-            if (merlino.style.display === "block") {
-                merlino.style.display = "none";
-                how.style.display = "block";
-            } else {
-                merlino.style.display = "block";
-                how.style.display = "none";
+
+
+        <!-- 3 BUTTONS MENU START -->
+
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="reload()">New Game</a></li>
+                <li><a href="javascript:void(0);" onclick="solution()">Solution</a></li>
+                <li><a href="javascript:void(0);" onclick="howto()">How To</a></li>
+            </ul>
+        </nav>
+
+        <!-- 3 BUTTONS MENU END -->
+
+
+
+
+        <!-- BURGER MENU START -->
+
+        <div id="myLinks">
+
+            <a href="javascript:void(0);" onclick="reload()">New Game</a>
+            <hr>
+            <a href="javascript:void(0);" onclick="solution()">Solution</a>
+            <hr>
+            <a href="javascript:void(0);" onclick="howto()">How To</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+            <span class="burger">
+                <hr>
+                <hr>
+                <hr>
+            </span>
+        </a>
+
+
+        <script>
+            function burgerMenu() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
             }
-        }
-    </script>
-    <!-- GAME END -->
+        </script>
+
+        <!-- BURGER MENU END -->
 
 
 
-    <!-- FOOTER START -->
+        <!-- GAME START -->
 
-    <footer class="footer">
-        <p class="bigFooter">© 2020 Memory Game Project - Code Institute Milestone 2</p>
-        <p class="smallFooter">© 2020 Memory Game Project</p>
-        <p class="smallFooter">Code Institute Milestone 2</p>
-    </footer>
+        <section class="section">
+            <div id="center">
+                <div class='score'>
+                    <p>1UP</p>
+                    <p id='cScore'>0000000</p>
+                </div>
+                <div class="table">
+                    <img id="one" class="pic" onclick="guess(this.id)" />
+                    <img id="two" class="pic" onclick="guess(this.id)" />
+                    <img id="three" class="pic" onclick="guess(this.id)" />
+                    <img id="four" class="pic" onclick="guess(this.id)" />
+                </div>
+                <div class="table">
+                    <img id="five" class="pic" onclick="guess(this.id)" />
+                    <img id="six" class="pic" onclick="guess(this.id)" />
+                    <img id="seven" class="pic" onclick="guess(this.id)" />
+                    <img id="eight" class="pic" onclick="guess(this.id)" />
+                </div>
+                <div class="table">
+                    <img id="nine" class="pic" onclick="guess(this.id)" />
+                    <img id="ten" class="pic" onclick="guess(this.id)" />
+                    <img id="uno" class="pic" onclick="guess(this.id)" />
+                    <img id="due" class="pic" onclick="guess(this.id)" />
+                </div>
+                <div class="table">
+                    <img id="tre" class="pic" onclick="guess(this.id)" />
+                    <img id="quattro" class="pic" onclick="guess(this.id)" />
+                    <img id="cinque" class="pic" onclick="guess(this.id)" />
+                    <img id="sei" class="pic" onclick="guess(this.id)" />
+                </div>
+            </div>
 
-    <!-- FOOTER END -->
+            <div id="instructions">
+                <h1>Memory: How to play</h1>
+                <p>Memory has long been a favourite game for all generations. It is easy to play, in fact it is so
+                    simple that really young children can play with ease. It requires observation, concentration and a
+                    good memory to win. This is a single player game. The game is also known as Concentration,
+                    Pelmanism, Shinkei-suijaku, Pexeso and Pairs.</p>
+                <h2>Object of the Game</h2>
+                <p>The object of the game is to collect all the matching pairs to win.</p>
+                <h2>Playing Memory</h2>
+                <p>Choose a card by clicking on it to turn it over, then select another card to turn that over too. If
+                    the two cards are a matching pair, for example two Jon Snow, then they will be removed from the game
+                    table. The player is awarded another turn for making a match and goes again. If the cards are not a
+                    match they are turned back over, and you can keep choosing another card to guess a pair. The game
+                    continues in this fashion until all the cards are played. If the player would like to see the
+                    solution, it’s possible to click on the button ‘Solution’ to turn all the cards over. It’s also
+                    possible to start a new game by clicking on ‘New Game’.</p>
+                <h2>Winning the Game</h2>
+                <p>The player wins once all the cards have been played.</p>
+            </div>
+
+            <div id="welldone">
+                <p id='wellfont'>Well done!</p>
+                <p id='finalScore'></p>
+                <img src="Images/welldone.png" />
+            </div>
+        </section>
+
+        <script>
+            function howto() {
+                var merlino = document.getElementById("center");
+                var how = document.getElementById("instructions");
+
+                if (merlino.style.display === "block") {
+                    merlino.style.display = "none";
+                    how.style.display = "block";
+                } else {
+                    merlino.style.display = "block";
+                    how.style.display = "none";
+                }
+            }
+        </script>
+        <!-- GAME END -->
 
 
-    <script src="js/script.js"></script>
 
+        <!-- FOOTER START -->
+
+        <footer class="footer">
+            <p class="bigFooter">© 2020 Memory Game Project - Code Institute Milestone 2</p>
+            <p class="smallFooter">© 2020 Memory Game Project</p>
+            <p class="smallFooter">Code Institute Milestone 2</p>
+        </footer>
+
+        <!-- FOOTER END -->
+
+
+        <script src="js/script.js"></script>
+    </main>
 </body>
 
 </html>

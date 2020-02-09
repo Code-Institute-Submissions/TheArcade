@@ -45,6 +45,8 @@ Milestone Project 2 - with Code Institute
 
 **09 Feb:** I just noticed that git commit doesn't accept special characters in the text, then I probably missed some commits, since they didn't go through.
 
+**09 Feb:** Issue with the footer, it wasn't always at the bottom. Changing screen size, the footer left a wide empty space below. It took much research to fix this issue. I applied the struture of the page of an example of the course, and then I added display flex and flex direction to make it work with all the screens with a good look.
+
 
 
 ## Deployment
