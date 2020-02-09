@@ -16,6 +16,8 @@
 <body>
 
     <main class="main">
+
+
         <!-- HEADER START -->
 
         <header class="header">
@@ -26,8 +28,7 @@
 
 
 
-
-        <!-- 3 BUTTONS MENU START -->
+        <!-- MAIN MENU START -->
 
         <nav>
             <ul>
@@ -37,7 +38,7 @@
             </ul>
         </nav>
 
-        <!-- 3 BUTTONS MENU END -->
+        <!-- MAIN MENU END -->
 
 
 
@@ -76,7 +77,7 @@
 
 
 
-        <!-- GAME START -->
+        <!-- GAME SECTION START -->
 
         <section class="section">
             <div id="center">
@@ -125,9 +126,7 @@
                     match they are turned back over, and you can keep choosing another card to guess a pair. The game
                     continues in this fashion until all the cards are played. If the player would like to see the
                     solution, it’s possible to click on the button ‘Solution’ to turn all the cards over. It’s also
-                    possible to start a new game by clicking on ‘New Game’.</p>
-                <h2>Winning the Game</h2>
-                <p>The player wins once all the cards have been played.</p>
+                    possible to start a new game by clicking on ‘New Game’. The player wins once all the cards have been played.</p>
             </div>
 
             <div id="welldone">
@@ -137,32 +136,7 @@
             </div>
         </section>
 
-        <script>
-            function howto() {
-                if (document.getElementById("instructions").style.display != "block") {
-
-                    if (document.getElementById('welldone').style.display != "block") {
-                        var merlino = document.getElementById("center");
-                        var how = document.getElementById("instructions");
-
-                        if (merlino.style.display === "block") {
-                            merlino.style.display = "none";
-                            how.style.display = "block";
-                        } else {
-                            merlino.style.display = "block";
-                            how.style.display = "none";
-                        }
-                    } else {
-                        document.getElementById('welldone').style.display = "none";
-                        document.getElementById("instructions").style.display = "block";
-                    }
-                } else {
-                    document.getElementById("instructions").style.display = "none";
-                    document.getElementById("center").style.display = "block";
-                }
-            }
-        </script>
-        <!-- GAME END -->
+        <!-- GAME SECTION END -->
 
 
 

@@ -1,10 +1,10 @@
 /****************** MOBILE FIRST APPROACH ******************/
 
-/*** Note: Breakpoint 992px not necessary ***/
+/* Note: Breakpoint 992px not necessary */
 
 
 
-/****** SCREEN MAX 576px ******/
+/* SCREEN MAX 576px */
 
     .header {
         margin: 0;
@@ -20,10 +20,13 @@
         text-align: center;
     }
 
+    /* Let's hide the menu, we only need the burger menu with this screen size */
     nav ul {
         display: none;
     }
 
+
+    /* Burger Menu On */
     .burger {
         display: block;
         position: absolute;
@@ -32,11 +35,11 @@
         width: 30px;
         margin: 10px;
     }
-    
+
     .burger hr {
         border: 1.3px solid #ffffff;
     }
-    
+
     #myLinks {
         display: none;
         position: absolute;
@@ -50,7 +53,7 @@
         border: 3px solid #f4c318;
         text-align: center;
     }
-    
+ 
     #myLinks a:link {
         margin: 28px;
         color: white;
@@ -58,18 +61,18 @@
         font-size: 26px;
         display: block;
     }
-    
-    
+  
     #myLinks a:visited {
         color: white;
-      }
-    
+    }
     
     #myLinks hr {
         border: 1px solid #ffffff;
         width: 30px;
     }
 
+ 
+    /* A different footer for a small screen */
     .footer {
         margin: 0;
         left: 0;
@@ -90,11 +93,9 @@
 
 
 
-/****** SCREEN MIN 576px ******/
+/* SCREEN MIN 576px */
 
 @media (min-width: 576px) {
-
-
     .footer .bigFooter {
         display: block;
     }
@@ -102,13 +103,12 @@
     .footer .smallFooter {
         display: none;
     }
-
 }
 
 
 
 
-/****** SCREEN MIN 768px ******/
+/* SCREEN MIN 768px */
 
 @media (min-width: 768px) {
     nav ul {

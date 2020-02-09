@@ -1,3 +1,6 @@
+/****************** MOBILE FIRST APPROACH ******************/
+
+
 body, html {
     height: 100%;
     margin: 0;
@@ -20,6 +23,7 @@ body, html {
 }
 
 
+/* Game section */
 .table {
     padding: 0;
     display: flex;
@@ -30,13 +34,13 @@ body, html {
     border-radius: 50%;
     width: 55px;
     height: 55px;
-    margin: 6px;  /* 48px */
+    margin: 6px;
 }
 
 .pics {
     border-radius: 50%;
-    width: 55px; /* 154px */
-    height: 55px; /* 154px */
+    width: 55px;
+    height: 55px;
     margin: 4px; 
     border: 2px solid #f4c318;
 }
@@ -45,6 +49,8 @@ body, html {
     display: block;
 }
 
+
+/* Instructions style */
 #instructions {
     display: none;
     margin: auto;
@@ -64,6 +70,20 @@ body, html {
     font-size: 18px;
 }
 
+
+/* main Score style */
+.score {
+    margin: auto;
+    width: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f4c318;
+    display: flex;    
+    justify-content: space-between;
+}
+
+
+/* Game completed style */
 #welldone {
     margin: auto;
     text-align: center;
@@ -76,17 +96,6 @@ body, html {
     color: #f4c318;
 }
 
-.score {
-    margin: auto;
-    width: 200px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #f4c318;
-    display: flex;    
-    justify-content: space-between;
-}
-
-
 #finalScore {
     font-size: 20px;
     font-weight: bold;
@@ -94,7 +103,8 @@ body, html {
 }
 
 
-/****** SCREEN MIN 768px ******/
+
+/* SCREEN MIN 768px */
 
 @media (min-width: 576px) {
     .section {
@@ -109,20 +119,23 @@ body, html {
 
 
 
-
-/****** SCREEN MIN 768px ******/
+/* SCREEN MIN 768px */
 
 @media (min-width: 768px) {
+    .score {
+        width: 240px;
+    }
+
     .pic {
         width: 55px;
         height: 55px;
-        margin: 10px;  /* 48px */
+        margin: 10px;
     }
         
     .pics {
         border-radius: 50%;
-        width: 55px; /* 154px */
-        height: 55px; /* 154px */
+        width: 55px;
+        height: 55px;
         margin: 8px; 
     }
 
@@ -137,16 +150,11 @@ body, html {
     #instructions h2 {
         font-size: 20px;
     }
-
-    .score {
-        width: 240px;
-    }
 }
 
 
 
-
-/****** SCREEN MIN 992px ******/
+/* SCREEN MIN 992px */
 
 @media (min-width: 992px) {
     .section {
@@ -155,16 +163,26 @@ body, html {
         color: #15162e;
     }
     
+    .score {
+        margin: auto;
+        width: 380px;
+        font-size: 38px;
+        font-weight: bold;
+        color: #f4c318;
+        display: flex;    
+        justify-content: space-between;
+    }
+
     .pic {
         width: 90px;
         height: 90px;
-        margin: 16px;  /* 48px */
+        margin: 16px;
     }
         
     .pics {
         border-radius: 50%;
-        width: 90px; /* 154px */
-        height: 90px; /* 154px */
+        width: 90px;
+        height: 90px;
         margin: 14px; 
     }
 
@@ -184,21 +202,12 @@ body, html {
         font-size: 20px;
     }
 
-    .score {
-        margin: auto;
-        width: 380px;
-        font-size: 38px;
-        font-weight: bold;
-        color: #f4c318;
-        display: flex;    
-        justify-content: space-between;
-    }
+
 }
 
 
 
-
-/****** SCREEN MIN 1200px ******/
+/* SCREEN MIN 1200px */
 
 @media (min-width: 1200px) {
     .pic {
