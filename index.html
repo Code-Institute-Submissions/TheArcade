@@ -80,6 +80,10 @@
 
     <main class="main">
         <section id="center">
+            <div class='score'>
+                <p>1UP</p>
+                <p id='cScore'>0000000</p>
+            </div>
             <div class="table">
                 <img id="one" class="pic" onclick="guess(this.id)" />
                 <img id="two" class="pic" onclick="guess(this.id)" />
@@ -115,6 +119,12 @@
             <p>Choose a card by clicking on it to turn it over, then select another card to turn that over too. If the two cards are a matching pair, for example two Jon Snow, then they will be removed from the game table. The player is awarded another turn for making a match and goes again. If the cards are not a match they are turned back over, and you can keep choosing another card to guess a pair. The game continues in this fashion until all the cards are played. If the player would like to see the solution, it’s possible to click on the button ‘Solution’ to turn all the cards over. It’s also possible to start a new game by clicking on ‘New Game’.</p>
             <h2>Winning the Game</h2>
             <p>The player wins once all the cards have been played.</p>
+        </section>
+
+        <section id="welldone">
+             <p id='wellfont'>Well done!</p>
+             <p id='finalScore'></p>
+             <img src="Images/welldone.png" />
         </section>
     </main>
 

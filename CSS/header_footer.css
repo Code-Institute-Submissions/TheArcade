@@ -75,8 +75,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding: 20px;
         background-color: #2e3e50;
         border: 3px solid #f4c318;
         color: #ffffff;

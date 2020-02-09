@@ -49,32 +49,65 @@ var ct = 0; // Counter to know when we have completed the game
 var check = []; // Array to gather the values of the two pics and compare them
 var idGet = []; // Save the ID of the img for comparison 
 var clicks = 0; // We can click only on two cards in a row
+var start = 0; // Counter to start the timer on the first click
+var seconds = 0; // Well... seconds!
+var totSec = 0; // Timeframe between a match and the previous one
+var tempSec = 0; // Keep seconds value at each match
+var score = 0;// Current score
 
 function guess(getID) {
+
+    start++;
+
+    if(start == 1) {
+        var x = setInterval(function() {
+            seconds++;
+        }, 1000);
+    }
 
     clicks++;
 
     // Let's verify if we clicked on three cards in a row    
-    if(clicks > 2) return false;
+    if (clicks > 2) return false;
 
     // Let's save the img ID value so that we can compare afterwards 
     idGet[match] = getID;
 
     // Let's verify if we click on the same picture two times
-    if(match == 1 && idGet[0] == getID) { clicks = 1; return false; }
+    if (match == 1 && idGet[0] == getID) { clicks = 1; return false; }
 
 
     // Function two compare the two cards
     function compare(current) {
         if (match == 1) {
             if (check[0] == current) {
+                clicks = 0;
+                totSec = seconds - tempSec;
+                tempSec = seconds; // let's save the current 'seconds' value
+                score = Math.round(score + (20000 / totSec));
+                let conv = score.toString().length;
+                let zero = 7 - conv;
+                let zeroN = "0";
+                for(let zn = 1; zn < zero; zn++) { zeroN = zeroN.concat("0"); }
+                document.getElementById("cScore").innerHTML = zeroN + score;
+                console.log(score);
+
                 setTimeout(function () {
                     document.getElementById(getID).style.visibility = "hidden";
                     document.getElementById(idGet[0]).style.visibility = "hidden";
-                    clicks = 0;
                 }, 1300);
+                
                 match = 0;
                 ct++;
+                if (ct == 8) {
+                    setTimeout(function () {
+                        document.getElementById('welldone').style.display = "block";
+                        document.getElementById('center').style.display = "none";
+                        document.getElementById("finalScore").innerHTML = "<span style='color:#f4c318;'>Final Score: </span>" + score;
+                        console.log(score);
+                    }, 1000);
+                }
+
             } else {
                 match = 0;
 
@@ -202,7 +235,7 @@ function solution() {
 }
 
 
-// New Game
+// Click on New Game
 function reload() {
     location.reload();
 }

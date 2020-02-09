@@ -39,6 +39,9 @@ Milestone Project 2 - with Code Institute
 
 **06 Feb:** The difference in terms of pixels between the House Stark Crest and the characters pictures was causing too many problems, the character pictuare was squared, but the crest was not. I used lightroom to make the crest squared, now it's much easier to have a balanced and better organised game table.
 
+**09 Feb:** Still working on the score. The numbers could have been organised much better breaking them in single characters and reassembling them in single dedicated speaces, but for a matter of time I will leave them in this way, anyway it matches the purpose of the Milestone.
+
+
 
 ## Deployment
 

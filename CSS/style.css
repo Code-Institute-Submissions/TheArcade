@@ -6,7 +6,7 @@ body {
 }
 
 .main {
-    padding-top: 35px;
+    padding-top: 5px;
     padding-bottom: 35px;
     background-color: #ffffff;
     color: #15162e;
@@ -23,15 +23,14 @@ body {
     border-radius: 50%;
     width: 55px;
     height: 55px;
-    margin: 14px;  /* 48px */
+    margin: 6px;  /* 48px */
 }
-
 
 .pics {
     border-radius: 50%;
     width: 55px; /* 154px */
     height: 55px; /* 154px */
-    margin: 12px; 
+    margin: 4px; 
     border: 2px solid #f4c318;
 }
 
@@ -58,6 +57,34 @@ body {
     font-size: 18px;
 }
 
+#welldone {
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
+#wellfont {
+    font-size: 50px;
+    font-weight: bold;
+    color: #f4c318;
+}
+
+.score {
+    margin: auto;
+    width: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f4c318;
+    display: flex;    
+    justify-content: space-between;
+}
+
+
+#finalScore {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ea9107;
+}
 
 
 /****** SCREEN MIN 768px ******/
@@ -65,6 +92,11 @@ body {
 @media (min-width: 576px) {
     .main {
         padding-top: 10px;
+    }
+
+    .score {
+        width: 200px;
+
     }
 }
 
@@ -75,16 +107,16 @@ body {
 
 @media (min-width: 768px) {
     .pic {
-        width: 75px;
-        height: 75px;
-        margin: 22px;  /* 48px */
+        width: 55px;
+        height: 55px;
+        margin: 10px;  /* 48px */
     }
         
     .pics {
         border-radius: 50%;
-        width: 75px; /* 154px */
-        height: 75px; /* 154px */
-        margin: 20px; 
+        width: 55px; /* 154px */
+        height: 55px; /* 154px */
+        margin: 8px; 
     }
 
     #instructions p {
@@ -97,6 +129,10 @@ body {
     
     #instructions h2 {
         font-size: 20px;
+    }
+
+    .score {
+        width: 240px;
     }
 }
 
@@ -115,14 +151,14 @@ body {
     .pic {
         width: 90px;
         height: 90px;
-        margin: 28px;  /* 48px */
+        margin: 16px;  /* 48px */
     }
         
     .pics {
         border-radius: 50%;
         width: 90px; /* 154px */
         height: 90px; /* 154px */
-        margin: 26px; 
+        margin: 14px; 
     }
 
     #instructions {
@@ -140,6 +176,16 @@ body {
     #instructions h2 {
         font-size: 20px;
     }
+
+    .score {
+        margin: auto;
+        width: 380px;
+        font-size: 38px;
+        font-weight: bold;
+        color: #f4c318;
+        display: flex;    
+        justify-content: space-between;
+    }
 }
 
 
@@ -149,12 +195,12 @@ body {
 
 @media (min-width: 1200px) {
     .pic {
-        width: 105px;
-        height: 105px;
+        width: 95px;
+        height: 95px;
     }
     
     .pics {
-        width: 105px;
-        height: 105px;
+        width: 95px;
+        height: 95px;
     }
 }
