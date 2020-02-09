@@ -41,6 +41,10 @@ Milestone Project 2 - with Code Institute
 
 **09 Feb:** Still working on the score. The numbers could have been organised much better breaking them in single characters and reassembling them in single dedicated speaces, but for a matter of time I will leave them in this way, anyway it matches the purpose of the Milestone.
 
+**09 Feb:** Score is showing partial result when the player wins, the player is supposed to see 'Well done' and the complete score when wins the game, but the system shows the score without tha last point. I removed the code from the setTimeout function and this solved the issue.
+
+**09 Feb:** I just noticed that git commit doesn't accept special characters in the text, then I probably missed some commits, since they didn't go through.
+
 
 
 ## Deployment
