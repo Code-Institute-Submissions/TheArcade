@@ -50,7 +50,7 @@ var check = []; // Array to gather the values of the two pics and compare them
 var idGet = []; // Save the ID of the img for comparison 
 var clicks = 0; // We can click only on two cards in a row
 var start = 0; // Counter to start the timer on the first click
-var seconds = 0; // Well... seconds!
+var seconds = 1; // Well... seconds! Setting to 1 to avoid infinity
 var totSec = 0; // Timeframe between a match and the previous one
 var tempSec = 0; // Keep seconds value at each match
 var score = 0;// Current score
@@ -96,7 +96,7 @@ function guess(getID) {
                     document.getElementById(getID).style.visibility = "hidden";
                     document.getElementById(idGet[0]).style.visibility = "hidden";
                 }, 1300);
-                
+
                 match = 0;
                 ct++;
                 if (ct == 8) {

@@ -47,6 +47,7 @@ Milestone Project 2 - with Code Institute
 
 **09 Feb:** Issue with the footer, it wasn't always at the bottom. Changing screen size, the footer left a wide empty space below. It took much research to fix this issue. I applied the struture of the page of an example of the course, and then I added display flex and flex direction to make it work with all the screens with a good look.
 
+**09 Feb:** Checked that if you win the game and you are on the section well done, if you click on how to, the link doesn't work, it appears a page with a messy HTML. Fixed the issue.
 
 
 ## Deployment
