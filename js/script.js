@@ -79,7 +79,7 @@ function guess(getID) {
     function compare(current) {
         if (match == 1) {   // if we have two cards turned
             if (check[0] == current) {   // if they match
-                clicks = 0;
+
                 totSec = seconds - tempSec;
                 tempSec = seconds; // let's save the current 'seconds' value
                 score = Math.round(score + (20000 / totSec));   // let's calculate how many points we scored
@@ -88,14 +88,15 @@ function guess(getID) {
                 let zeroN = "0";
                 for(let zn = 1; zn < zero; zn++) { zeroN = zeroN.concat("0"); }
                 document.getElementById("cScore").innerHTML = zeroN + score;
-
                 setTimeout(function () {   // let's remove the cards from the table
                     document.getElementById(getID).style.visibility = "hidden";
                     document.getElementById(idGet[0]).style.visibility = "hidden";
+                    clicks = 0;
                 }, 1300);
 
                 match = 0;
                 ct++;
+
                 if (ct == 8) {    // This in case we have found the last two cards
                     setTimeout(function () {
                         document.getElementById('welldone').style.display = "block";
@@ -103,7 +104,7 @@ function guess(getID) {
                         document.getElementById("finalScore").innerHTML = "<span style='color:#f4c318;'>Final Score: </span>" + score;
                     }, 1000);
                 }
-
+ 
             } else {   // In case the two cards do not match, we turn them back again
                 match = 0;
 
@@ -120,6 +121,7 @@ function guess(getID) {
             check[0] = current;
             if (match < 1) match++;
         }
+
     }
 
 
@@ -239,25 +241,26 @@ function reload() {
 
 // Function that we call when you click on How To
 function howto() {
-    if (document.getElementById("instructions").style.display != "block") {
 
-        if (document.getElementById('welldone').style.display != "block") {
-            var merlino = document.getElementById("center");
-            var how = document.getElementById("instructions");
+    var gTable = document.getElementById("center");
+    var how = document.getElementById("instructions");
+    var wD = document.getElementById('welldone');
 
-            if (merlino.style.display === "block") {
-                merlino.style.display = "none";
+    if (how.style.display != "block") {
+        if (wD.style.display != "block") {
+            if (gTable.style.display == "block") {
+                gTable.style.display = "none";
                 how.style.display = "block";
             } else {
-                merlino.style.display = "block";
+                gTable.style.display = "block";
                 how.style.display = "none";
             }
         } else {
-            document.getElementById('welldone').style.display = "none";
-            document.getElementById("instructions").style.display = "block";
+            wD.style.display = "none";
+            how.style.display = "block";
         }
     } else {
-        document.getElementById("instructions").style.display = "none";
-        document.getElementById("center").style.display = "block";
+        how.style.display = "none";
+        gTable.style.display = "block";
     }
 }

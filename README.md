@@ -49,6 +49,9 @@ Milestone Project 2 - with Code Institute
 
 **09 Feb:** Checked that if you win the game and you are on the section well done, if you click on how to, the link doesn't work, it appears a page with a messy HTML. Fixed the issue.
 
+**10 Feb:** I could verify that if you are fast with the mouse, you can turn three cards in a row when two cards match. I moved the variable 'clicks = 0;' into the setTimeout function and the issue is now solved.
+
+
 
 ## Deployment
 
