@@ -6,19 +6,35 @@ Milestone Project 2 - with Code Institute
 
 ## UX
 
+This project is for those who need some entertainment, and would like to relax playing a simple game, which can be enjoyable for both children and adults.
+
+I always create my wireframes on paper with a gel pen, I find it artistically more inspiring, and I can create a structure much faster and much nicer than I could through a website for mokeups and wireframes that is colder and schematic. I feel more creative in this way.
+
 
 ## Features
 
-
 ### Existing Features
 
+- Menu: 
+- New Game: allows the user to reload the page in order to start a new game. 
+- Solution: by clicking on Solution, you will be able to uncover all the cards left on the table and see the solution.
+- How To: a link to the game instructions
+
+- Game: This game has 16 cards, each card has a double. Each card is a character of Game Of Thrones. The game will shuffle the deck for you and distribute the 16 cards on the table. You will need to guess two identical cards. If you complete the game you will see a messagge "Well Done!". The game also has a score, I calculate the score dividing 20000 with seconds passed between two guess, then I remove the part after the comma and I add the result to the current score.
 
 ### Features Left to Implement
+
+- allow two Allow two players to play against each other also in remote.
+- have more stages, for example stage two with 24 cards, stage 3 with 30 etc.
+- make the game harder with a timer in order to complete the game in a timeframe defined from the beginning.
 
 ## Technologies Used
 - HTML5
 - CSS3
 - JavaScript
+- DOM
+
+- In agreement with my Tutor and as per his directive, I created this project avoiding jQuery and Bootstrap, this in order to consolidate my knowledge of HTML5, CSS3, JavaScript Fundamentals and DOM. Although this has greatly extended the time it took to me to complete this project, I must say that we couldn't make better decision. I feel more much more confident using flex box, and my knoledge of the HTML struncture improved, I solved issues that I was not able to solve in MS1, and I could improve much more my knowledge of CSS. Regarding JavaScript, no using jQuery consolidate my knowledge with DOM, I hade many doubts about how to use DOM combined with CSS, but now I feel very confident. Although this is only a small project, I truly feel this is a good start.   
 
 ## Testing
 **31 Jan:** Created the structure of the website. No relevant issues found during this process, I couldn't remember many things, but after a review of the first Milestone, w3school, Code Institute's online lessons, everything became very natural to use, and I felt much more confident than in the first Milestone. Created a simple header, a nav bar, a simple footer.
@@ -55,6 +71,7 @@ Milestone Project 2 - with Code Institute
 
 ## Deployment
 
+- I used Visual Studio Code on MacOS in local linked to my GitHub account.
 
 ## Credits
 ### Content
@@ -68,5 +85,3 @@ Milestone Project 2 - with Code Institute
 - I found inspiration for the logo used on this website: https://www.logomaker.com/
 - The photos used in this site were obtained from https://www.hbo.com/game-of-thrones/cast-and-crew
 - House Stark crest was obtained here: https://www.vippng.com/png/detail/242-2422088_game-of-thrones-house-stark-sigil-game-of.png
-
-### Acknowledgements
